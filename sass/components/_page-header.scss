@@ -1,0 +1,9 @@
+.page-header {
+  border: 1px solid #ececec;
+
+  &--justify {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+  }
+}

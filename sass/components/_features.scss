@@ -1,0 +1,46 @@
+.section-title--visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.features {
+  @extend %no-marker;
+
+  display: flex;
+  padding-top: 94px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icon {
+  background-color: #f5f4fa;
+  display: block;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.features__title {
+  color: $secondary-text-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-bottom: 30px;
+}

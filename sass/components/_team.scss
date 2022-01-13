@@ -1,0 +1,38 @@
+.section {
+  background-color: #f5f4fa;
+}
+
+.team {
+  @extend %no-marker;
+
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 30px;
+  text-align: center;
+  background-color: $hero-text-color;
+}
+
+.team__pic {
+  display: block;
+}
+
+.team__title {
+  color: $secondary-text-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  padding: 30px 0 10px;
+  margin: 0;
+}
+
+.team__text {
+  padding-bottom: 16px;
+  margin: 0;
+}

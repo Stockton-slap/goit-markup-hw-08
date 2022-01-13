@@ -1,0 +1,56 @@
+.address-box {
+  margin-right: 70px;
+}
+
+.address-box__link {
+  color: $hero-text-color;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.address-box__logo {
+  @extend %logo-span;
+}
+
+.footer-address {
+  @extend %no-marker;
+}
+
+.footer-address__item {
+  margin-bottom: 9px;
+}
+
+.footer-address__link {
+  text-decoration: none;
+
+  transition: color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &--address {
+    color: $hero-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+  }
+
+  &--email,
+  &--tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
