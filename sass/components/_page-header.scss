@@ -1,9 +1,10 @@
 .page-header {
   border: 1px solid #ececec;
+  position: relative;
 
   &--justify {
-    display: flex;
-    height: 80px;
-    justify-content: space-between;
+    // display: flex;
+    // height: 80px;
+    // justify-content: space-between;
   }
 }
