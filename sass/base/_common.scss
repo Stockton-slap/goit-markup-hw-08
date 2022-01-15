@@ -7,10 +7,8 @@ body {
 }
 
 .container {
-  // width: 1200px;
-  // margin: 0 auto;
-  // padding-left: 15px;
-  // padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -18,6 +16,11 @@ body {
 
   @media screen and (min-width: 768px) {
     width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -41,10 +44,17 @@ body {
 .section-title {
   color: $secondary-text-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   margin: 0;
-  padding-bottom: 50px;
-  padding-top: 94px;
+  padding-bottom: 30px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+    padding-top: 94px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }

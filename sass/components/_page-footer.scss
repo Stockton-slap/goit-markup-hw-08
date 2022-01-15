@@ -1,10 +1,13 @@
 .page-footer {
   background-color: #2f303a;
   padding: 60px 0;
-  height: 252px;
+
+  @media screen and (min-width: 1200px) {
+    height: 252px;
+  }
 
   &--align {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
   }
 }

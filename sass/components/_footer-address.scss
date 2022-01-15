@@ -1,5 +1,13 @@
 .address-box {
-  margin-right: 70px;
+  // margin-right: 70px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .address-box__link {
@@ -8,11 +16,18 @@
   text-decoration: none;
 
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
 
   margin-bottom: 20px;
-  display: flex;
+
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .address-box__logo {
@@ -24,7 +39,15 @@
 }
 
 .footer-address__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address__link {

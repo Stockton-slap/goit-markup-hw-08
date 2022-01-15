@@ -1,20 +1,31 @@
 .media-box {
-  display: flex;
-  width: 206px;
-  height: 80px;
-  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
 
-  margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 206px;
+    height: 80px;
+    flex-direction: column;
+
+    margin-right: 93px;
+  }
 }
 
 .media-box__title {
   @extend %footer-text;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .media-box__list {
   @extend %no-marker;
 
   display: flex;
+  justify-content: center;
 }
 
 .media-box__item {

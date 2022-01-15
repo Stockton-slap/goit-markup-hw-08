@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <!-- HEADER -->
     <header class="page-header">
@@ -21,7 +22,7 @@
           <a href="./index.html" class="nav__logo-link">
             <span class="nav__logo">Web</span>Studio
           </a>
-          <ul class="nav__list is-open" data-menu id="nav__list">
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__current">Студия</a>
             </li>
@@ -32,32 +33,10 @@
               <a href="#" class="nav__link">Контакты</a>
             </li>
           </ul>
-          <button
-            aria-expanded="false"
-            aria-controls="nav__list"
-            type="button"
-            class="nav__button nav__button--is-open"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use class="nav__icon-menu" href="./images/icons.svg#menu"></use>
-              <use
-                class="nav__icon-cross"
-                href="./images/icons.svg#cross"
-              ></use>
-            </svg>
-          </button>
         </nav>
         <ul class="head-address">
           <li class="head-address__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="head-address__link head-address--size"
-            >
+            <a href="mailto:info@devstudio.com" class="head-address__link">
               <svg class="head-address__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -65,10 +44,7 @@
             >
           </li>
           <li class="head-address__item">
-            <a
-              href="tel:+380961111111"
-              class="head-address__link head-address--position"
-            >
+            <a href="tel:+380961111111" class="head-address__link">
               <svg class="head-address__icon" width="12" height="16">
                 <use href="./images/icons.svg#mobile"></use>
               </svg>
@@ -76,6 +52,22 @@
             >
           </li>
         </ul>
+        <button
+          aria-expanded="false"
+          aria-controls="nav__list"
+          type="button"
+          class="nav__button"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="nav__icon-menu" href="images/icons.svg#menu"></use>
+            <use class="nav__icon-cross" href="images/icons.svg#cross"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -214,7 +206,7 @@
       </section>
 
       <!-- WHAT WE DO -->
-      <section>
+      <section class="section-occupation">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="occupation">
@@ -539,7 +531,7 @@
           </ul>
         </div>
         <form class="footer-form">
-          <div>
+          <div class="footer-form__container">
             <h3 class="footer-form__title">Подпишитесь на рассылку</h3>
             <label>
               <input

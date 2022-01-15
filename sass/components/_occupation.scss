@@ -1,3 +1,9 @@
+.section-occupation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .occupation {
   @extend %no-marker;
 

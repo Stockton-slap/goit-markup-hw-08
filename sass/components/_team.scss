@@ -5,8 +5,10 @@
 .team {
   @extend %no-marker;
 
-  display: flex;
-  padding-bottom: 94px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 94px;
+  }
 }
 
 .team__item {

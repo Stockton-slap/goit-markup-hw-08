@@ -1,7 +1,16 @@
 .filter {
   display: flex;
   justify-content: center;
-  margin: 94px 0 50px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 94px 0 50px;
+  }
 }
 
 .filter__button {
@@ -21,6 +30,14 @@
   transition: box-shadow $transition-duration $transition-timing-function,
     background-color $transition-duration $transition-timing-function,
     color $transition-duration $transition-timing-function;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
 
   &:hover,
   &:focus {

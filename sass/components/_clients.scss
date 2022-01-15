@@ -3,7 +3,14 @@
 
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
+  flex-wrap: wrap;
+
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__item {
@@ -11,18 +18,25 @@
   border-radius: 4px;
   margin-right: 30px;
   background-color: $hero-text-color;
-  width: 170px;
+  width: calc((100% - 4 * 15px) / 2);
   height: 92px;
+  margin-bottom: 30px;
 
   transition: border $transition-duration $transition-timing-function;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
   }
 
-  &:nth-child(6) {
-    margin-right: 0;
+  &:nth-child(even) {
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
   }
 }
 

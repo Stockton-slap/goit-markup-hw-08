@@ -13,16 +13,24 @@
 
 .features {
   @extend %no-marker;
+  padding-top: 60px;
 
-  display: flex;
-  padding-top: 94px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .features__item:not(:last-child) {
-  margin-right: 30px;
+  // margin-right: 30px;
 }
 
 .features__icon {
+  @media screen and (max-width: 768px) {
+    width: 450px;
+  }
+
   background-color: #f5f4fa;
   display: block;
   margin-bottom: 30px;
@@ -36,6 +44,8 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  text-align: center;
 }
 
 .features__text {

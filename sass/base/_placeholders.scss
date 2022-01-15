@@ -12,6 +12,7 @@
 %footer-text {
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 0;
   padding: 0;
   font-weight: 700;
   font-size: 14px;
@@ -19,8 +20,4 @@
   letter-spacing: 0.03em;
 
   color: $hero-text-color;
-}
-
-%hidden-header {
-  display: none;
 }

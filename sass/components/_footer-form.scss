@@ -1,16 +1,30 @@
 .footer-form {
-  width: 570px;
-  height: 86px;
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    height: 86px;
+    align-items: flex-end;
+  }
+}
+
+.footer-form__container {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-form__title {
   @extend %footer-text;
+
+  text-align: center;
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -22,6 +36,10 @@
 
   background-color: inherit;
   color: $hero-text-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-form--subscribe {

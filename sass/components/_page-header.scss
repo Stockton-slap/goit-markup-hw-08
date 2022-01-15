@@ -1,10 +1,12 @@
 .page-header {
   border: 1px solid #ececec;
-  position: relative;
 
   &--justify {
-    // display: flex;
-    // height: 80px;
-    // justify-content: space-between;
+    height: 80px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
