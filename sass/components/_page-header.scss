@@ -1,8 +1,15 @@
 .page-header {
   border: 1px solid #ececec;
+  position: relative;
 
   &--justify {
     height: 80px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__container {

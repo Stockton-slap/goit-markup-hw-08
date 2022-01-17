@@ -35,11 +35,29 @@
 
   @media screen and (max-width: 767px) {
     display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 796px;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $hero-text-color;
+      z-index: 999;
+    }
   }
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link {
@@ -49,11 +67,18 @@
   padding: 32px 0;
   display: block;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-
   transition: color $transition-duration $transition-timing-function;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+  }
 
   &:hover,
   &:focus {
@@ -65,29 +90,39 @@
   color: $accent-color;
   position: relative;
 
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
+  @media screen and (min-width: 768px) {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
 
-    background-color: currentColor;
-    border-radius: 2px;
+      background-color: currentColor;
+      border-radius: 2px;
+    }
   }
 }
 
 .nav__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
 
   .nav__icon-cross {
     display: none;
+  }
+
+  .nav__icon-menu {
+    display: block;
   }
 
   &.is-open .nav__icon-cross {

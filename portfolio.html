@@ -23,7 +23,7 @@
             <a href="./index.html" class="nav__logo-link">
               <span class="nav__logo">Web</span>Studio
             </a>
-            <ul class="nav__list">
+            <ul class="nav__list" data-menu>
               <li class="nav__item">
                 <a href="./index.html" class="nav__link">Студия</a>
               </li>
@@ -56,6 +56,22 @@
             </li>
           </ul>
         </div>
+        <button
+          aria-expanded="false"
+          aria-controls="nav__list"
+          type="button"
+          class="nav__button"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="nav__icon-menu" href="images/icons.svg#menu"></use>
+            <use class="nav__icon-cross" href="images/icons.svg#cross"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -369,5 +385,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
