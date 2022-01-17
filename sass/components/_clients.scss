@@ -10,6 +10,7 @@
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     padding-bottom: 94px;
+    margin-bottom: 0;
   }
 }
 
@@ -34,8 +35,20 @@
   }
 
   &:nth-child(even) {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       margin-right: 0;
+    }
+  }
+
+  &:nth-child(3n + 3) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-last-child(-n + 3) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 0;
     }
   }
 }

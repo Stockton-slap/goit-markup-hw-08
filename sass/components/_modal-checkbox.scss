@@ -1,15 +1,19 @@
 .checkbox {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 
   color: $primary-text-color;
 
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
-}
 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .form__checkbox {
   margin-bottom: 30px;
   margin-top: 20px;
@@ -39,12 +43,14 @@
   border-radius: 2px;
   border: 2px solid $secondary-text-color;
 
-  margin-right: 7px;
   margin-bottom: 3px;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 7px;
+  }
 }
 
 .checkbox__link {
   color: $accent-color;
-  margin-left: 4px;
 }

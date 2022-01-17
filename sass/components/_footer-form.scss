@@ -5,22 +5,24 @@
   flex-direction: column;
 
   @media screen and (min-width: 1200px) {
-    width: 570px;
-    height: 86px;
+    // width: 570px;
+    // height: 86px;
     align-items: flex-end;
+    flex-direction: row;
   }
 }
 
 .footer-form__container {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 }
 
 .footer-form__title {
   @extend %footer-text;
-
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-form__input {

@@ -11,10 +11,20 @@
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-  width: 370px;
+  width: 450px;
   height: 404px;
 
   transition: box-shadow $transition-duration $transition-timing-function;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 440px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 404px;
+  }
 
   &:hover,
   &:focus {

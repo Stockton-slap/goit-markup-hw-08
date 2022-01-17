@@ -25,8 +25,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transition-duration linear;
@@ -38,6 +38,11 @@
   background-color: $hero-text-color;
 
   padding: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button {
