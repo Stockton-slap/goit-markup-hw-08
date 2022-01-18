@@ -19,40 +19,50 @@
     <header class="page-header">
       <div class="container page-header--justify">
         <div class="page-header__container">
-          <nav class="nav">
-            <a href="./index.html" class="nav__logo-link">
-              <span class="nav__logo">Web</span>Studio
-            </a>
-            <ul class="nav__list" data-menu>
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link nav__current">Студия</a>
+          <a href="./index.html" class="page-header__logo-link"
+            ><span class="page-header__logo">Web</span>Studio
+          </a>
+          <div class="menu-container" data-menu>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="./index.html" class="nav__link nav__current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="head-address">
+              <li class="head-address__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="head-address__link head-address--larger-size"
+                >
+                  <svg class="head-address__icon" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
               </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link">Портфолио</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">Контакты</a>
+              <li class="head-address__item">
+                <a
+                  href="tel:+380961111111"
+                  class="head-address__link head-address--smaller-size"
+                >
+                  <svg class="head-address__icon" width="12" height="16">
+                    <use href="./images/icons.svg#mobile"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="head-address">
-            <li class="head-address__item">
-              <a href="mailto:info@devstudio.com" class="head-address__link">
-                <svg class="head-address__icon" width="16" height="12">
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="head-address__item">
-              <a href="tel:+380961111111" class="head-address__link">
-                <svg class="head-address__icon" width="12" height="16">
-                  <use href="./images/icons.svg#mobile"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          </div>
         </div>
         <button
           aria-expanded="false"
