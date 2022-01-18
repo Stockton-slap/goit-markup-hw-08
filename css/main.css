@@ -565,7 +565,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .head-address {
     margin-left: 84px;
-    padding-right: 50px;
   }
 }
 
@@ -583,8 +582,13 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .head-address__item:nth-child(1) {
-    margin-right: 30px;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head-address__item:first-child {
+    margin-right: 30px;
   }
 }
 
@@ -1347,7 +1351,6 @@ body {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   width: 450px;
-  height: 404px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
