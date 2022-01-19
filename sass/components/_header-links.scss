@@ -1,0 +1,29 @@
+.header-links {
+  @extend %no-marker;
+
+  display: flex;
+
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-links__item {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  color: $accent-color;
+
+  &::after {
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

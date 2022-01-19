@@ -62,6 +62,12 @@
                 >
               </li>
             </ul>
+            <ul class="header-links">
+              <li class="header-links__item">Instagram</li>
+              <li class="header-links__item">Twitter</li>
+              <li class="header-links__item">Facebook</li>
+              <li class="header-links__item">LinkedIn</li>
+            </ul>
           </div>
         </div>
         <button
@@ -223,34 +229,61 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="occupation">
             <li class="occupation__item">
-              <img
-                src="./images/logo1.jpg"
-                alt="Человек набирает код на клавиатуре, перед ним планшет с синтаксисом"
-                width="370"
-              />
-              <div class="occupation__caption">
-                <p class="occupation__text">Десктопные приложения</p>
-              </div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/occupation/pc-occupation1.jpg    370w,
+                    ./images/desktop/occupation/pc-occupation1@2x.jpg 740w
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/logo1.jpg"
+                  alt="Человек набирает код на клавиатуре, перед ним планшет с синтаксисом"
+                  width="370"
+                />
+                <div class="occupation__caption">
+                  <p class="occupation__text">Десктопные приложения</p>
+                </div>
+              </picture>
             </li>
             <li class="occupation__item">
-              <img
-                src="./images/logo2.jpg"
-                alt="Девушка держит телефон в руке, перед ней открытый ноутбук с инструкциями по телефону"
-                width="370"
-              />
-              <div class="occupation__caption">
-                <p class="occupation__text">Мобильные приложения</p>
-              </div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/occupation/pc-occupation2.jpg    370w,
+                    ./images/desktop/occupation/pc-occupation2@2x.jpg 740w
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/logo2.jpg"
+                  alt="Девушка держит телефон в руке, перед ней открытый ноутбук с инструкциями по телефону"
+                  width="370"
+                />
+                <div class="occupation__caption">
+                  <p class="occupation__text">Мобильные приложения</p>
+                </div>
+              </picture>
             </li>
             <li class="occupation__item">
-              <img
-                src="./images/logo3.jpg"
-                alt="Человек держит планшет с изображением разноцветной мозаики"
-                width="370"
-              />
-              <div class="occupation__caption">
-                <p class="occupation__text">Дизайнерские решения</p>
-              </div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/occupation/pc-occupation3.jpg    370w,
+                    ./images/desktop/occupation/pc-occupation3@2x.jpg 740w
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/logo3.jpg"
+                  alt="Человек держит планшет с изображением разноцветной мозаики"
+                  width="370"
+                />
+                <div class="occupation__caption">
+                  <p class="occupation__text">Дизайнерские решения</p>
+                </div>
+              </picture>
             </li>
           </ul>
         </div>
@@ -262,12 +295,38 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="./images/team1.jpg"
-                alt="Product Designer"
-                width="270"
-                class="team__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/pc-team1.jpg    270w,
+                    ./images/desktop/team/pc-team1@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/tab-team1.jpg    354w,
+                    ./images/tablet/team/tab-team1@2x.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/mob-team1.jpg    450w,
+                    ./images/mobile/team/mob-team1@2x.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  width="450"
+                />
+
+                <img
+                  src="./images/team1.jpg"
+                  alt="Product Designer"
+                  class="team__pic"
+                />
+              </picture>
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="media-links">
@@ -302,12 +361,37 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team2.jpg"
-                alt="Frontend Developer"
-                width="270"
-                class="team__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/pc-team2.jpg    270w,
+                    ./images/desktop/team/pc-team2@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/tab-team2.jpg    354w,
+                    ./images/tablet/team/tab-team2@2x.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/mob-team2.jpg    450w,
+                    ./images/mobile/team/mob-team2@2x.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  width="450"
+                />
+                <img
+                  src="./images/team2.jpg"
+                  alt="Frontend Developer"
+                  class="team__pic"
+                />
+              </picture>
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="media-links">
@@ -342,12 +426,38 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team3.jpg"
-                alt="Marketing"
-                width="270"
-                class="team__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/pc-team3.jpg    270w,
+                    ./images/desktop/team/pc-team3@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/tab-team3.jpg    354w,
+                    ./images/tablet/team/tab-team3@2x.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/mob-team3.jpg    450w,
+                    ./images/mobile/team/mob-team3@2x.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  width="450"
+                />
+
+                <img
+                  src="./images/team3.jpg"
+                  alt="Marketing"
+                  class="team__pic"
+                />
+              </picture>
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="media-links">
@@ -382,12 +492,37 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team4.jpg"
-                alt="UI Designer"
-                width="270"
-                class="team__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/pc-team4.jpg    270w,
+                    ./images/desktop/team/pc-team4@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  width="270"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/tab-team4.jpg    354w,
+                    ./images/tablet/team/tab-team4@2x.jpg 708w
+                  "
+                  media="(min-width: 768px)"
+                  width="354"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/mob-team4.jpg    450w,
+                    ./images/mobile/team/mob-team4@2x.jpg 900w
+                  "
+                  media="(max-width: 767px)"
+                  width="450"
+                />
+                <img
+                  src="./images/team4.jpg"
+                  alt="UI Designer"
+                  class="team__pic"
+                />
+              </picture>
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="media-links">
@@ -424,6 +559,7 @@
           </ul>
         </div>
       </section>
+      
       <!-- CLIENTS -->
       <section>
         <div class="container">

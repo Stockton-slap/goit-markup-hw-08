@@ -33,9 +33,7 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 2 * 30px) / 2);
-    margin-right: 15px;
-    margin-left: 15px;
+    width: 50%;
   }
 
   @media screen and (min-width: 1200px) {

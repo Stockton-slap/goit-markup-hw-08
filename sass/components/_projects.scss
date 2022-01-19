@@ -1,19 +1,25 @@
 .projects {
   @extend %no-marker;
 
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 94px;
-  width: inherit;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+  }
 }
 
 .projects__item {
   margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
   width: 450px;
 
   transition: box-shadow $transition-duration $transition-timing-function;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -23,6 +29,10 @@
   @media screen and (min-width: 1200px) {
     width: 370px;
     height: 404px;
+
+    &:nth-child(n + 7) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover,

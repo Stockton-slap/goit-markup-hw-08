@@ -6,10 +6,15 @@
     // position: absolute;
     // left: 40px;
     // bottom: 134px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 40px;
+    bottom: 134px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 84px;
+    // margin-left: 84px;
     // padding-right: 50px;
   }
 
@@ -38,9 +43,9 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
 
-    position: absolute;
-    left: 40px;
-    bottom: 134px;
+    // position: absolute;
+    // left: 40px;
+    // bottom: 134px;
   }
 }
 
@@ -52,9 +57,9 @@
 
     margin-bottom: 32px;
 
-    position: absolute;
-    left: 40px;
-    bottom: 194px;
+    // position: absolute;
+    // left: 40px;
+    // bottom: 194px;
   }
 }
 

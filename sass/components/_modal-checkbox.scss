@@ -1,5 +1,5 @@
 .checkbox {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
 
@@ -12,6 +12,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
+    justify-content: center;
   }
 }
 .form__checkbox {
@@ -53,4 +54,8 @@
 
 .checkbox__link {
   color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 4px;
+  }
 }
