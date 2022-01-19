@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     // width: 570px;
     // height: 86px;
     align-items: flex-end;
@@ -39,7 +39,7 @@
   background-color: inherit;
   color: $hero-text-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 358px;
   }
 }

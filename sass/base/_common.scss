@@ -14,12 +14,12 @@ body {
     width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
     margin: 0 auto;
   }
 }
@@ -51,7 +51,7 @@ body {
   padding-bottom: 30px;
   padding-top: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 50px;
     padding-top: 94px;
     font-size: 36px;

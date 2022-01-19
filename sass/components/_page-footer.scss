@@ -2,12 +2,12 @@
   background-color: #2f303a;
   padding: 60px 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     height: 252px;
   }
 
   &--align {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       display: flex;
       align-items: baseline;
     }
@@ -15,13 +15,13 @@
 }
 
 .page-footer__container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-around;
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     justify-content: center;
     align-items: baseline;
     margin-bottom: 0;

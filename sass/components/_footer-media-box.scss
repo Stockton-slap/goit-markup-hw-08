@@ -3,7 +3,7 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     width: 206px;
     height: 80px;

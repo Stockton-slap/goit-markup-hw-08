@@ -6,7 +6,7 @@
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   max-width: 1600px;
 
@@ -17,7 +17,7 @@
       url("../images/mobile/bg/mob-background@2x.jpg");
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image: $gradient-hero,
       url("../images/tablet/bg/tab-background.jpg");
 
@@ -29,7 +29,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     background-image: $gradient-hero,
       url("../images/desktop/bg/pc-background.jpg");
 
@@ -58,7 +58,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.37;
   }

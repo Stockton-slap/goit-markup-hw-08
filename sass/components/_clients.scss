@@ -16,7 +16,7 @@
     justify-content: space-around;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
     padding-bottom: 94px;
     margin-bottom: 0;
@@ -34,7 +34,7 @@
 
   transition: border $transition-duration $transition-timing-function;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: calc((100% - 6 * 15px) / 3);
   }
 
@@ -50,18 +50,18 @@
   }
 
   &:nth-child(3n + 3) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-right: 0;
     }
   }
 
   &:nth-last-child(-n + 3) {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-bottom: 0;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
 }
