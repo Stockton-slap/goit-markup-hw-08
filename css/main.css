@@ -295,6 +295,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -312,7 +313,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -737,6 +737,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desktop/bg/pc-background.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/bg/pc-background.jpg");
   }
@@ -1423,7 +1424,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .filter {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -1507,9 +1508,18 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
+  .projects__item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__item {
     width: 354px;
+    height: 404px;
+  }
+  .projects__item:nth-child(-n + 2) {
     height: 440px;
   }
 }

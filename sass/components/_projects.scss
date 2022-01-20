@@ -21,9 +21,17 @@
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 354px;
-    height: 440px;
+    height: 404px;
+
+    &:nth-child(-n + 2) {
+      height: 440px;
+    }
   }
 
   @media screen and (min-width: $desktop) {

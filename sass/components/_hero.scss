@@ -30,6 +30,8 @@
   }
 
   @media screen and (min-width: $desktop) {
+    margin: 0 auto;
+
     background-image: $gradient-hero,
       url("../images/desktop/bg/pc-background.jpg");
 
