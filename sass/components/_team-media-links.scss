@@ -14,7 +14,7 @@
   display: flex;
   margin-right: 10px;
   justify-content: center;
-  background-color: $hero-text-color;
+  background-color: $white-color;
 
   transition: background-color $transition-duration $transition-timing-function;
 
@@ -31,7 +31,7 @@
 .media-links__item:hover,
 .media-links__item:focus {
   .media-links__icon {
-    fill: $hero-text-color;
+    fill: $white-color;
   }
 }
 

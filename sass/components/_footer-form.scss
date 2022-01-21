@@ -18,6 +18,7 @@
   }
 }
 
+.media-box__title,
 .footer-form__title {
   @extend %footer-text;
   @media screen and (max-width: 1199px) {
@@ -37,7 +38,7 @@
   margin-right: 12px;
 
   background-color: inherit;
-  color: $hero-text-color;
+  color: $white-color;
 
   @media screen and (min-width: $desktop) {
     width: 358px;

@@ -10,7 +10,7 @@
 }
 
 .address-box__link {
-  color: $hero-text-color;
+  color: $white-color;
   font-family: Raleway, sans-serif;
   text-decoration: none;
 
@@ -41,6 +41,12 @@
 
 .footer-address {
   @extend %no-marker;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-address__item {
@@ -66,7 +72,7 @@
   }
 
   &--address {
-    color: $hero-text-color;
+    color: $white-color;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
