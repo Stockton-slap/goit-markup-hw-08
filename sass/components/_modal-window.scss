@@ -28,6 +28,7 @@
   top: 50%;
   left: 50%;
   height: 609px;
+  width: 450px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transition-duration linear;
@@ -40,8 +41,8 @@
 
   padding: 40px;
 
-  @media screen and (min-width: $tablet) {
-    width: 450px;
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 30px);
   }
 
   @media screen and (min-width: $desktop) {

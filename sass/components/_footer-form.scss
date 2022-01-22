@@ -44,6 +44,10 @@
   background-color: inherit;
   color: $white-color;
 
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 358px;
   }

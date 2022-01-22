@@ -43,6 +43,10 @@
 
 .team__pic {
   display: block;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .team__title {
