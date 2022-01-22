@@ -13,6 +13,10 @@
 }
 
 .footer-form__container {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
