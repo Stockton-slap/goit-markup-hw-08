@@ -24,7 +24,7 @@
   display: block;
 }
 
-.occupation-list__caption {
+.occupation-list__text {
   background-color: rgba(47, 48, 58, 0.8);
   color: $white-color;
 
@@ -35,6 +35,9 @@
   width: 370px;
   height: 70px;
 
+  margin: 0;
+  padding: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,9 +46,4 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.occupation-list__text {
-  margin: 0;
-  padding: 0;
 }
