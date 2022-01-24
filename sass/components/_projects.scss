@@ -13,6 +13,7 @@
 .projects__item {
   margin-right: 30px;
   border: 1px solid #eeeeee;
+
   width: 450px;
 
   transition: box-shadow $transition-duration $transition-timing-function;
@@ -96,11 +97,14 @@
 }
 
 .projects__text {
-  margin: 0;
-  padding: 63px 24px;
+  color: $white-color;
+
   position: absolute;
   top: 0;
   left: 0;
+
+  margin: 0;
+  padding: 63px 24px;
 
   transform: translateY(100%);
   transition: transform $transition-duration $transition-timing-function;
@@ -108,12 +112,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-
-  color: $white-color;
 }
 
 .projects__title {
   color: $secondary-text-color;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

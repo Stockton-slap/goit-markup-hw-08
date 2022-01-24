@@ -1,18 +1,13 @@
-.clients {
+.clients-list {
   @extend %no-marker;
 
   display: flex;
   flex-wrap: wrap;
 
   margin-right: -15px;
-
   padding-bottom: 60px;
 
-  @media screen and (max-width: 767px) {
-    justify-content: space-between;
-  }
-
-  @media screen and (min-width: 728px) {
+  @media screen and (max-width: 1199px) {
     justify-content: space-around;
   }
 
@@ -23,14 +18,16 @@
   }
 }
 
-.clients__item {
+.clients-list__item {
   border: 1px solid $icon-color;
   border-radius: 4px;
-  margin-right: 15px;
   background-color: $white-color;
+
   width: calc((100% - 4 * 15px) / 2);
   height: 92px;
+
   margin-bottom: 30px;
+  margin-right: 15px;
 
   transition: border $transition-duration $transition-timing-function;
 
@@ -63,25 +60,27 @@
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 
-.clients__item:hover,
-.clients__item:focus {
-  .clients__icon {
+.clients-list__item:hover,
+.clients-list__item:focus {
+  .clients-list__icon {
     fill: $accent-color;
   }
 }
 
-.clients__link {
+.clients-list__link {
   width: 100%;
   height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.clients__icon {
+.clients-list__icon {
   fill: $icon-color;
 
   transition: fill $transition-duration $transition-timing-function;

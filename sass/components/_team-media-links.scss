@@ -1,20 +1,25 @@
 .media-links {
-  padding: 0;
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+
+  padding: 0;
 }
 
 .media-links__item {
+  background-color: $white-color;
+
   width: 44px;
   height: 44px;
+
   border: none;
   border-radius: 50%;
+
   align-items: center;
   display: flex;
-  margin-right: 10px;
   justify-content: center;
-  background-color: $white-color;
+
+  margin-right: 10px;
 
   transition: background-color $transition-duration $transition-timing-function;
 
@@ -38,6 +43,7 @@
 .media-links__link {
   width: 100%;
   height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;

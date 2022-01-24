@@ -15,19 +15,19 @@
   &__container {
     @media screen and (min-width: $tablet) {
       display: flex;
-      // align-items: center;
     }
   }
 }
 
 .page-header__logo-link {
   color: $secondary-text-color;
+
   font-family: Raleway, sans-serif;
   text-decoration: none;
-
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
+
   margin-bottom: 16px;
   margin-top: 16px;
 
@@ -41,12 +41,13 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
     margin-right: 93px;
     margin-bottom: 25px;
     margin-top: 24px;
   }
 }
 
-.page-header__logo {
+.page-header__item {
   @extend %logo-span;
 }

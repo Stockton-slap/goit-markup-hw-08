@@ -25,6 +25,7 @@
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     justify-content: center;
+
     font-size: 26px;
     line-height: 1.19;
   }
@@ -35,7 +36,7 @@
   }
 }
 
-.address-box__logo {
+.address-box__item {
   @extend %logo-span;
 }
 

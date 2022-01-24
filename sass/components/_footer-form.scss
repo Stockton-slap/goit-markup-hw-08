@@ -5,8 +5,6 @@
   flex-direction: column;
 
   @media screen and (min-width: $desktop) {
-    // width: 570px;
-    // height: 86px;
     align-items: flex-end;
     flex-direction: row;
   }
@@ -56,6 +54,7 @@
 .footer-form--subscribe {
   display: flex;
   align-items: center;
+
   padding-left: 29px;
 }
 

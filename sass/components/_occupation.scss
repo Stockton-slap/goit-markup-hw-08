@@ -4,14 +4,14 @@
   }
 }
 
-.occupation {
+.occupation-list {
   @extend %no-marker;
 
   display: flex;
   padding-bottom: 94px;
 }
 
-.occupation__item {
+.occupation-list__item {
   position: relative;
   display: flex;
 
@@ -20,10 +20,18 @@
   }
 }
 
-.occupation__caption {
+.occupation-list__pic {
+  display: block;
+}
+
+.occupation-list__caption {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $white-color;
+
   position: absolute;
   bottom: 0;
   left: 0;
+
   width: 370px;
   height: 70px;
 
@@ -35,12 +43,9 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
-  color: $white-color;
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
-.occupation__text {
+.occupation-list__text {
   margin: 0;
   padding: 0;
 }

@@ -25,28 +25,33 @@ body {
 }
 
 .button {
-  height: 50px;
-  width: 200px;
   background-color: $accent-color;
   color: $white-color;
+
+  height: 50px;
+  width: 200px;
+
   cursor: pointer;
   font-family: inherit;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9px;
   letter-spacing: 0.06em;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-color: transparent;
   border-radius: 4px;
 }
 
 .section-title {
   color: $secondary-text-color;
+
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+
   margin: 0;
   padding-bottom: 30px;
   padding-top: 60px;
@@ -54,6 +59,7 @@ body {
   @media screen and (min-width: $desktop) {
     padding-bottom: 50px;
     padding-top: 94px;
+
     font-size: 36px;
     line-height: 1.16;
   }

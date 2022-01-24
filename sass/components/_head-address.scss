@@ -2,25 +2,18 @@
   @extend %no-marker;
 
   @media screen and (max-width: 767px) {
-    // display: none;
-    // position: absolute;
-    // left: 40px;
-    // bottom: 134px;
     display: flex;
     flex-direction: column-reverse;
+
     position: absolute;
     left: 40px;
     bottom: 134px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    // margin-left: 84px;
-    // padding-right: 50px;
-  }
-
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
+
     margin-left: 305px;
   }
 }
@@ -42,10 +35,6 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-
-    // position: absolute;
-    // left: 40px;
-    // bottom: 134px;
   }
 }
 
@@ -56,10 +45,6 @@
     letter-spacing: 0.02em;
 
     margin-bottom: 32px;
-
-    // position: absolute;
-    // left: 40px;
-    // bottom: 194px;
   }
 }
 
@@ -84,6 +69,10 @@
     @media screen and (min-width: $tablet) {
       font-size: 14px;
       line-height: 1.14;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 32px 0;
     }
   }
 }
